@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -142,9 +142,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="19" y1="31" x2="53" y2="31" width="0" layer="20"/>
-<wire x1="53" y1="31" x2="53" y2="71" width="0" layer="20"/>
-<wire x1="53" y1="71" x2="19" y2="71" width="0" layer="20"/>
+<wire x1="19" y1="31" x2="52" y2="31" width="0" layer="20"/>
+<wire x1="52" y1="31" x2="52" y2="71" width="0" layer="20"/>
+<wire x1="52" y1="71" x2="19" y2="71" width="0" layer="20"/>
 <wire x1="19" y1="71" x2="19" y2="31" width="0" layer="20"/>
 <text x="24.6" y="31.6" size="0.8128" layer="25">B0</text>
 <text x="27.4" y="31.6" size="0.8128" layer="25">B1</text>
@@ -155,15 +155,15 @@
 <text x="40.2" y="31.6" size="0.8128" layer="25">B6</text>
 <text x="42.8" y="31.6" size="0.8128" layer="25">B7</text>
 <text x="45" y="31.6" size="0.8128" layer="25">AREF</text>
-<text x="45" y="49.2" size="0.6096" layer="25">C3/CRX</text>
-<text x="47" y="46.6" size="0.6096" layer="25">C4</text>
-<text x="46.8" y="44.2" size="0.6096" layer="25">C5</text>
-<text x="45.7" y="41.6" size="0.6096" layer="25">ADC6</text>
+<text x="44.5" y="49.2" size="0.6096" layer="25">C3/CRX</text>
+<text x="46.6" y="46.6" size="0.6096" layer="25">C4</text>
+<text x="46.6" y="44.2" size="0.6096" layer="25">C5</text>
+<text x="45.4" y="41.6" size="0.6096" layer="25">ADC6</text>
 <text x="45.4" y="39.2" size="0.6096" layer="25">ADC7</text>
 <text x="46.2" y="36.6" size="0.6096" layer="25">+5V</text>
-<text x="47" y="56.8" size="0.6096" layer="25">C0</text>
-<text x="46.8" y="54.2" size="0.6096" layer="25">C1</text>
-<text x="45" y="51.6" size="0.6096" layer="25">C2/CTX</text>
+<text x="46.6" y="56.9" size="0.6096" layer="25">C0</text>
+<text x="46.7" y="54.2" size="0.6096" layer="25">C1</text>
+<text x="44.6" y="51.6" size="0.6096" layer="25">C2/CTX</text>
 <text x="23.6" y="57" size="0.6096" layer="25">D0</text>
 <text x="23.6" y="54.2" size="0.6096" layer="25">D1</text>
 <text x="23.6" y="51.8" size="0.6096" layer="25">D2</text>
@@ -192,8 +192,8 @@
 <text x="21.2" y="65.2" size="0.6096" layer="25">VCC</text>
 <text x="21.2" y="61.2" size="0.6096" layer="25">GND</text>
 <hole x="20.8" y="69.2" drill="3"/>
-<hole x="51.2" y="69.2" drill="3"/>
-<hole x="51.2" y="32.8" drill="3"/>
+<hole x="50.2" y="69.2" drill="3"/>
+<hole x="50.2" y="32.8" drill="3"/>
 <hole x="20.8" y="32.8" drill="3"/>
 <text x="35" y="46" size="0.6096" layer="25">AMPERSAND VCU</text>
 <text x="35" y="45" size="0.6096" layer="25">Rev 1.0</text>
@@ -1168,14 +1168,14 @@ design rules under a new name.</description>
 <via x="42.9768" y="62.7888" extent="1-16" drill="0.35"/>
 <polygon width="0.254" layer="1">
 <vertex x="19" y="71"/>
-<vertex x="53" y="71"/>
-<vertex x="53" y="31"/>
+<vertex x="52" y="71"/>
+<vertex x="52" y="31"/>
 <vertex x="19" y="31"/>
 </polygon>
 <polygon width="0.254" layer="16">
 <vertex x="19" y="71"/>
-<vertex x="53" y="71"/>
-<vertex x="53" y="31"/>
+<vertex x="52" y="71"/>
+<vertex x="52" y="31"/>
 <vertex x="19" y="31"/>
 </polygon>
 </signal>
@@ -1484,9 +1484,9 @@ design rules under a new name.</description>
 <wire x1="48.6156" y1="43.1292" x2="47.8536" y2="43.8912" width="0.1524" layer="1"/>
 <wire x1="49.3776" y1="43.1292" x2="48.6156" y2="43.1292" width="0.1524" layer="1"/>
 <wire x1="50.1396" y1="42.3672" x2="49.3776" y2="43.1292" width="0.1524" layer="1"/>
-<wire x1="50.1396" y1="36.2712" x2="50.1396" y2="42.3672" width="0.1524" layer="1"/>
-<wire x1="48.1584" y1="34.29" x2="50.1396" y2="36.2712" width="0.1524" layer="1"/>
-<wire x1="45.72" y1="34.29" x2="48.1584" y2="34.29" width="0.1524" layer="1"/>
+<wire x1="50.1396" y1="36.8712" x2="50.1396" y2="42.3672" width="0.1524" layer="1"/>
+<wire x1="47.5584" y1="34.29" x2="50.1396" y2="36.8712" width="0.1524" layer="1"/>
+<wire x1="45.72" y1="34.29" x2="47.5584" y2="34.29" width="0.1524" layer="1"/>
 </signal>
 <signal name="B0">
 <contactref element="U1" pad="12"/>
